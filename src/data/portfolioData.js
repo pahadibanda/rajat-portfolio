@@ -106,7 +106,7 @@ export const portfolioData = {
       link: "https://github.com/pahadibanda/Amazon-Sales-Analytics-Dashboard",
       liveLink: "https://github.com/pahadibanda/Amazon-Sales-Analytics-Dashboard",
       category: "Power BI",
-      image: "/sales_dashboard.jpg"
+      image: "/amazon_sales_dashboard.jpg"
     },
     {
       title: "Blinkit Grocery Sales Dashboard",
@@ -118,7 +118,7 @@ export const portfolioData = {
       link: "https://github.com/pahadibanda/blinkit-grocery-sales-dashboard",
       liveLink: "https://github.com/pahadibanda/blinkit-grocery-sales-dashboard",
       category: "Power BI",
-      image: "/hr_dashboard.jpg"
+      image: "/blinkit_grocery_dashboard.jpg"
     },
     {
       title: "HR Analytics Dashboard",
@@ -130,7 +130,7 @@ export const portfolioData = {
       link: "https://github.com/pahadibanda/HR-Analytics-Dashboard",
       liveLink: "https://github.com/pahadibanda/HR-Analytics-Dashboard",
       category: "Power BI",
-      image: "/finance_dashboard.jpg"
+      image: "/hr_analytics_dashboard.jpg"
     }
   ]
 };

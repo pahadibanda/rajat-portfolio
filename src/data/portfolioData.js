@@ -8,7 +8,7 @@ export const portfolioData = {
     email: "Rangrajat@gmail.com",
     phone: "9816647573",
     location: "Himachal Pradesh, India",
-    github: "https://github.com/",
+    github: "https://github.com/pahadibanda",
     linkedin: "https://www.linkedin.com/in/rajat-rangra-68849b248/",
     leetcode: "https://leetcode.com/yourusername",
     resumeUrl: "/resume.pdf"

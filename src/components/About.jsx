@@ -1,3 +1,4 @@
+import { Trophy } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 function About() {
@@ -18,10 +19,10 @@ function About() {
 
       <div className="about-grid">
         <div className="about-text reveal-fade-up">
-          <p>
+          <p style={{ marginBottom: '16px' }}>
             {about}
           </p>
-          <p>
+          <p style={{ marginBottom: '16px' }}>
             I believe that data integrity is just as important as storytelling. I enjoy working on challenges that require creative problem-solving, whether it is optimizing database queries, building predictive ML pipelines, or translating business questions into interactive visual dashboards.
           </p>
           <p>
@@ -36,6 +37,20 @@ function About() {
               <div className="stat-label">{stat.label}</div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="reveal-fade-up" style={{ marginTop: '40px', textAlign: 'left' }}>
+        <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.4rem', color: 'var(--text-h)', marginBottom: '16px' }}>
+          <Trophy size={22} color="var(--accent)" /> Key Achievements & Extracurriculars
+        </h3>
+        <div className="card" style={{ padding: '24px', background: 'var(--accent-bg)', borderColor: 'var(--accent-border)' }}>
+          <h4 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-h)', marginBottom: '8px' }}>
+            National Basketball Player
+          </h4>
+          <p style={{ fontSize: '1.05rem', color: 'var(--text)', lineHeight: 1.6, margin: 0 }}>
+            Represented the state of **Himachal Pradesh** in official national tournaments under the **Basketball Federation of India (BFI)**. Demonstrated leadership, disciplined collaboration, and tactical teamwork in high-pressure competitive environments.
+          </p>
         </div>
       </div>
     </section>

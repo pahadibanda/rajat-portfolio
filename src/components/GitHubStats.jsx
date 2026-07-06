@@ -5,7 +5,9 @@ function GitHubStats() {
   const githubUrl = portfolioData.personalInfo.github;
   // Extract username from github link
   // e.g. https://github.com/yourusername -> yourusername
-  const username = githubUrl ? githubUrl.split('/').pop() : 'yourusername';
+  const username = githubUrl 
+    ? githubUrl.replace(/\/$/, '').split('/').pop() 
+    : 'yourusername';
 
   const [stats, setStats] = useState({ followers: 0, repos: 0 });
   const [loading, setLoading] = useState(true);

@@ -76,6 +76,31 @@ function Navbar() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setIsOpen(false);
+    
+    if (targetId === '#') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    
+    const id = targetId.replace('#', '');
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
@@ -90,7 +115,7 @@ function Navbar() {
   return (
     <header className="navbar-header">
       <div className="nav-container">
-        <a href="#" className="logo">
+        <a href="#" onClick={(e) => handleNavClick(e, '#')} className="logo">
           {portfolioData.personalInfo.name}
         </a>
 
@@ -102,6 +127,7 @@ function Navbar() {
                 <a 
                   href={item.href} 
                   className={`nav-item-link ${item.href === '#' + activeSection ? 'active' : ''}`}
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
                 </a>
@@ -140,7 +166,7 @@ function Navbar() {
                   <a 
                     href={item.href} 
                     className={`mobile-item-link ${item.href === '#' + activeSection ? 'active' : ''}`}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleNavClick(e, item.href)}
                   >
                     {item.name}
                   </a>

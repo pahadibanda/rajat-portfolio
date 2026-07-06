@@ -40,8 +40,8 @@ export const portfolioData = {
     {
       institution: "Chandigarh University",
       location: "Mohali, India",
-      degree: "Bachelor of Engineering – Computer Science and Engineering",
-      score: "CGPA: 6.0",
+      degree: "Bachelor of Engineering (B.E.) – Computer Science and Engineering",
+      score: "CGPA: 6.08/10",
       period: "August 2022 – May 2026",
       status: "Graduated",
       coursework: [
@@ -97,39 +97,40 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Sales Data Analysis & Dashboard",
-      problem: "Collected and cleaned a retail sales dataset (10,000+ rows) using Pandas – handled missing values, removed duplicates, and standardized column formats for analysis.",
-      solution: "Created bar charts, pie charts, and trend line graphs using Matplotlib and Seaborn to visualize monthly revenue, top-selling products, and regional performance.",
-      dataset: "Retail Sales Dataset (10,000+ rows)",
-      outcome: "Enabled regional managers to pinpoint underperforming sectors and visualize monthly revenue.",
-      tech: ["Python", "Pandas", "Matplotlib", "Seaborn", "Excel", "Power BI"],
-      link: "https://github.com/",
-      liveLink: "https://github.com/",
-      category: "Data Analysis",
+      title: "Amazon Sales Analytics Dashboard",
+      problem: "Fragmented Amazon retail sales data made it difficult to analyze monthly profit margins, seasonal trends, and product performance.",
+      solution: "Designed and built an interactive Power BI dashboard powered by structured SQL database queries to visualize sales KPIs.",
+      dataset: "Amazon Retail Sales Dataset",
+      outcome: "Enabled deep-dive sales diagnostic capabilities, identifying key margin trends and improving reporting efficiency.",
+      tech: ["Power BI", "SQL", "DAX", "Data Analysis"],
+      link: "https://github.com/pahadibanda/Amazon-Sales-Analytics-Dashboard",
+      liveLink: "https://github.com/pahadibanda/Amazon-Sales-Analytics-Dashboard",
+      category: "Power BI",
       image: "/sales_dashboard.jpg"
     },
     {
-      title: "COVID-19 Data Trends Analysis",
-      problem: "Loaded and cleaned COVID-19 case data from Our World in Data using Pandas; handled null values and filtered country-wise records for trend analysis.",
-      solution: "Plotted line graphs and heatmaps to visualize daily case trends, recovery rates, and death rates across 10+ countries using Matplotlib and Seaborn.",
-      dataset: "Our World in Data COVID-19 Dataset",
-      outcome: "Provided clean, real-time visual tracking of vaccination cycles and disease metrics for policy planning.",
-      tech: ["Python", "Pandas", "Matplotlib", "Excel", "Data Visualization"],
-      link: "https://github.com/",
-      liveLink: "https://github.com/",
-      category: "Data Analysis",
-      image: "/covid_dashboard.jpg"
+      title: "Blinkit Grocery Sales Dashboard",
+      problem: "Grocery retail outlets struggled to track customer satisfaction, item outlet sales, and product performance dynamically.",
+      solution: "Developed an interactive Power BI dashboard utilizing DAX and Power Query to analyze Blinkit grocery sales datasets.",
+      dataset: "Blinkit Grocery Sales Dataset",
+      outcome: "Provided comprehensive visual diagnostics on item type sales, outlet sizes, and customer ratings.",
+      tech: ["Power BI", "DAX", "Power Query", "Excel", "Data Visualization"],
+      link: "https://github.com/pahadibanda/blinkit-grocery-sales-dashboard",
+      liveLink: "https://github.com/pahadibanda/blinkit-grocery-sales-dashboard",
+      category: "Power BI",
+      image: "/hr_dashboard.jpg"
     },
     {
-      title: "Student To-Do List Web Application",
-      problem: "Built a task management web app where users can add, delete, and mark tasks as complete – data saved in browser localStorage so tasks persist on page reload.",
-      solution: "Designed a clean, mobile-friendly UI using CSS Flexbox with color-coded priority labels (High / Medium / Low) for easy task tracking.",
-      dataset: "Browser LocalStorage",
-      outcome: "Created a responsive task manager web app that stores user data on local storage.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: "https://github.com/",
-      liveLink: "https://github.com/",
-      category: "Web Application"
+      title: "HR Analytics Dashboard",
+      problem: "Management lacked structured insights into employee retention, departmental performance, and organizational demographics.",
+      solution: "Created an HR analytics dashboard to track and analyze staff demographics, attrition rates, and satisfaction scores.",
+      dataset: "Corporate HR Dataset",
+      outcome: "Pinpointed critical attrition metrics and demographic patterns to assist HR retention strategies.",
+      tech: ["Power BI", "DAX", "Data Analytics"],
+      link: "https://github.com/pahadibanda/HR-Analytics-Dashboard",
+      liveLink: "https://github.com/pahadibanda/HR-Analytics-Dashboard",
+      category: "Power BI",
+      image: "/finance_dashboard.jpg"
     }
   ]
 };
